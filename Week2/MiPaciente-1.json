@@ -1,0 +1,53 @@
+{
+    "resourceType": "Patient",
+    "id": "053fcb6e-9100-4a00-b02f-956700602d58",
+    "identifier": [
+        {
+            "use": "official",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "PN",
+                        "display": "Person number"
+                    },
+                    {
+                        "system": "http://co.fhir.guide/core/CodeSystem/PersonIdentifierTypes",
+                        "code": "CC",
+                        "display": "Cédula de Ciudadanía"
+                    }
+                ]
+            },
+            "system": "http://co.fhir.guide/core/NamingSystem/RNEC",
+            "value": "1234567890A",
+            "period": {
+                "start": "1998-01-02"
+            }
+        },
+        {
+            "use": "usual",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "MR",
+                        "display": "Medical record number"
+                    }
+                ]
+            },
+            "value": "1234567890A"
+        }
+    ],
+    "active": true,
+    "name": [
+        {
+            "use": "official",
+            "text": "Mario Alfonso Moreno Reyes",
+            "family": "Moreno Reyes",
+            "given": [
+                "Mario",
+                "Alfonso"
+            ]
+        }
+    ]
+}
