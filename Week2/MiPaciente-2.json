@@ -1,0 +1,70 @@
+{
+    "resourceType": "Patient",
+    "id": "1676137f-938b-4092-a0bb-71792f346416",
+    "identifier": [
+        {
+            "use": "official",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "PN",
+                        "display": "Person number"
+                    },
+                    {
+                        "system": "http://co.fhir.guide/core/CodeSystem/PersonIdentifierTypes",
+                        "code": "TI",
+                        "display": "Tarjeta de Identidad"
+                    }
+                ]
+            },
+            "system": "http://co.fhir.guide/core/NamingSystem/RNEC",
+            "value": "439712639487",
+            "period": {
+                "start": "1990-12-31",
+                "end": "1998-01-01"
+            }
+        },
+        {
+            "use": "usual",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "MR",
+                        "display": "Medical record number"
+                    }
+                ]
+            },
+            "value": "1234567890A"
+        }
+    ],
+    "active": false,
+    "name": [
+        {
+            "use": "official",
+            "text": "Mario Alfonso Moreno Reyes",
+            "family": "Moreno Reyes",
+            "given": [
+                "Mario",
+                "Alfonso"
+            ]
+        },
+        {
+            "use": "usual",
+            "text": "Mario Moreno"
+        }
+    ],
+    "gender":"male",
+    "birthDate": "1945-03-12",
+    "deceasedBoolean": false,
+    "link": [
+        {
+            "other": {
+                "reference": "Patient/053fcb6e-9100-4a00-b02f-956700602d58"
+            },
+            "type": "replaced-by"
+        }
+    ]
+
+}
