@@ -10,8 +10,8 @@
     "coding": [
       {
         "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-        "code": "resolved",
-        "display": "Resolved"
+        "code": "active",
+        "display": "Active"
       }
     ]
   },
@@ -38,6 +38,7 @@
   "severity": {
     "coding": [
       {
+        "system": "http://snomed.info/sct",
         "code": "6736007",
         "display": "Moderate"
       }
@@ -53,11 +54,14 @@
     ]
   },
   "note": [
-    {
+   {
       "text": "Nulla Lorem est Lorem commodo duis laboris est exercitation duis exercitation esse. Incididunt nostrud eu proident amet labore laborum magna sit enim. Eiusmod ut anim adipisicing sunt mollit. Elit ex anim laborum sint veniam ex. Non ea qui anim occaecat magna pariatur non irure enim deserunt culpa esse in et."
     },
     {
       "text": "Cupidatat occaecat aute Lorem exercitation commodo."
+    },
+    {
+      "text": "el paciente manifiesta vómito, nauseas, diarrea, dolor estomacal, sin pérdida de conciencia ni orientación"
     }
   ],
   "subject": {
@@ -66,13 +70,28 @@
   "encounter": {
     "reference": "Encounter/47b7e0b5-25cc-43d3-a3a8-ee34ff1687fe"
   },
-  "onsetDateTime": "2024-02-17T14:24:00-05:00",
-  "abatementDateTime": "2024-02-21T16:00:00-05:00",
-  "recordedDate": "2024-02-19T09:34:58-05:00",
+  "onsetDateTime": "2024-03-17T14:24:00-05:00",
+  "abatementDateTime": "2024-03-25T16:00:00-05:00",
+  "recordedDate": "2024-03-20T09:34:58-05:00",
   "recorder": {
     "reference": "PractitionerRole/658f7617-e0dd-46f7-a342-8f3b65bc84af"
   },
   "asserter": {
     "reference": "PractitionerRole/658f7617-e0dd-46f7-a342-8f3b65bc84af"
-  }
+  },
+  "evidence": [
+    {
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "422400008",
+              "display": "Vomiting"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
